@@ -1,26 +1,31 @@
-<div class="header">
-  <div class="logo">
-    <img src="https://res.cloudinary.com/dzkoxrsdj/image/upload/v1646339469/angular_wzrs5o.png">
-  </div>
+<div class="homepage-container">
+hello world!
 </div>
-<div class="resource-list">
-  <h2>
-      Here are some resources to help you on your Angular + Netlify journey:
-  </h2>
-  <ul>
-    <li>
-      <a href="https://github.com/netlify-templates/angular-quickstart">The Angular Quickstart repo</a>
-    </li>
-    <li>
-      <a href="https://www.netlify.com/tags/angular/">Netlify Blog: Angular posts</a>
-    <li>
-      <a href="https://docs.netlify.com/">Netlify Docs</a>
-    </li>
-    <li>
-      <a href="https://angular.io/">Angular Docs</a>
-    </li>
-  </ul>
+<div>
+  <mat-toolbar color="primary">
+    <span><mat-icon>mood</mat-icon></span>
+
+    <span>Yay, Material in Angular 2!</span>
+
+    <button mat-icon-button [mat-menu-trigger-for]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item>Option 1</button>
+    <button mat-menu-item>Option 2</button>
+  </mat-menu>
+
+  <mat-card>
+    <button mat-button>All</button>
+    <button mat-raised-button>Of</button>
+    <button mat-raised-button color="primary">The</button>
+    <button mat-raised-button color="accent">Buttons</button>
+  </mat-card>
+
+  <span class="done">
+    <button mat-fab>
+      <mat-icon>check circle</mat-icon>
+    </button>
+  </span>
 </div>
-<footer class="footer">
-  Made with <a href="https://netlify.com"><img src="https://res.cloudinary.com/dzkoxrsdj/image/upload/v1646714899/netliheart_ezlkim.svg" alt="Netlify Logo" /></a> for you!
-</footer>
